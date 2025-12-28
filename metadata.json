@@ -1,0 +1,8 @@
+{
+  "name": "sarah",
+  "description": "وكيلة ذكاء اصطناعي خبيرة في عقارات منطقة عسير تتحدث باللهجة العسيرية الأصيلة، تدعم المحادثات النصية والصوتية.",
+  "requestFramePermissions": [
+    "microphone",
+    "geolocation"
+  ]
+}

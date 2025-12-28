@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سارة - خبيرة عقارات عسير</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --deep-emerald: #064e3b;
+            --asiri-green: #10b981;
+            --pearl-bg: #fcfaf7;
+            --soft-gold: #d4af37;
+        }
+        body {
+            font-family: 'Noto Kufi Arabic', sans-serif;
+            background-color: var(--pearl-bg);
+            color: var(--deep-emerald);
+            overflow: hidden;
+        }
+        
+        @keyframes magic-float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-12px) rotate(1deg); }
+        }
+        .animate-magic-float {
+            animation: magic-float 5s ease-in-out infinite;
+        }
+
+        @keyframes pulse-gentle {
+            0%, 100% { opacity: 0.25; transform: scale(1); }
+            50% { opacity: 0.55; transform: scale(1.18); }
+        }
+        .animate-pulse-gentle {
+            animation: pulse-gentle 3.5s ease-in-out infinite;
+        }
+
+        @keyframes rotate-clockwise {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        @keyframes rotate-counter-clockwise {
+            from { transform: rotate(360deg); }
+            to { transform: rotate(0deg); }
+        }
+        .animate-rotate-slow {
+            animation: rotate-clockwise 20s linear infinite;
+        }
+        .animate-rotate-slow-reverse {
+            animation: rotate-counter-clockwise 25s linear infinite;
+        }
+
+        @keyframes dash-slide {
+            to { stroke-dashoffset: -20; }
+        }
+        .animate-dash-flow {
+            stroke-dasharray: 4, 6;
+            animation: dash-slide 1s linear infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-150%) skewX(-20deg); }
+            50% { transform: translateX(150%) skewX(-20deg); }
+            100% { transform: translateX(150%) skewX(-20deg); }
+        }
+        .shimmer-effect {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+            animation: shimmer 4s infinite;
+        }
+
+        @keyframes light-streak {
+            0% { transform: translateY(0) scaleX(0); opacity: 0; }
+            50% { transform: translateY(-50px) scaleX(1); opacity: 0.5; }
+            100% { transform: translateY(-100px) scaleX(0); opacity: 0; }
+        }
+        .animate-light-streak {
+            animation: light-streak 1s ease-out forwards;
+        }
+
+        @keyframes particle-orbit {
+            0% { transform: rotate(0deg) translateX(40px) rotate(0deg); opacity: 0; }
+            20% { opacity: 1; }
+            100% { transform: rotate(360deg) translateX(80px) rotate(-360deg); opacity: 0; }
+        }
+        .animate-particle-orbit {
+            animation: particle-orbit 1.5s ease-out forwards;
+        }
+
+        @keyframes sparkle-burst-refined {
+            0% { transform: translate(0, 0) scale(0) rotate(var(--sr, 0deg)); opacity: 0; }
+            20% { opacity: 1; }
+            100% { transform: translate(var(--tx), var(--ty)) scale(var(--s)) rotate(var(--r)); opacity: 0; }
+        }
+        .animate-sparkle-burst {
+            animation: sparkle-burst-refined var(--d) cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+        }
+
+        .orb-glass {
+            background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.4), transparent);
+            backdrop-filter: blur(12px);
+        }
+
+        /* Hide scrollbars */
+        ::-webkit-scrollbar { display: none; }
+        
+        .transition-magic {
+            transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        /* Luxury Paper Pattern */
+        .bg-pattern {
+            background-image: radial-gradient(var(--asiri-green) 0.5px, transparent 0.5px);
+            background-size: 30px 30px;
+            opacity: 0.03;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
